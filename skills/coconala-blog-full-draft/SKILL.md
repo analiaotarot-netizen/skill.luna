@@ -1,6 +1,6 @@
 ---
 name: coconala-blog-full-draft
-description: End-to-end Coconala blog workflow that researches a live product page, writes a fact-checked Japanese blog article, generates a Relife Art-style thumbnail plus two body images in the user's editable ChatGPT image chat, normalizes images under 700 KB, uploads everything to Coconala, saves only as an unpublished draft, and verifies the reopened draft. Use when the user asks to combine Coconala blog writing, thumbnail/article image generation, Relife Art thumbnail styling, and live Coconala draft upload.
+description: End-to-end Coconala blog workflow that researches a live product page, writes a fact-checked Japanese blog article, sends the draft to Claude Code for a natural and friendly Japanese prose pass when available, generates a Relife Art-style thumbnail plus two body images in the user's editable ChatGPT image chat, normalizes images under 700 KB, uploads everything to Coconala, saves only as an unpublished draft, and verifies the reopened draft. Use when the user asks to combine Coconala blog writing, Claude Code prose refinement, thumbnail/article image generation, Relife Art thumbnail styling, and live Coconala draft upload.
 ---
 
 # Coconala Blog Full Draft
@@ -20,14 +20,15 @@ Use `scripts/normalize_blog_images.py` after downloading each generated image un
 1. Collect or confirm the target Coconala account, product URL, adopted title, fixed first line, article memo, exclusions, image style, and any recurring-character reference.
 2. Open the live product page and use only currently visible facts. Never invent reviews, qualifications, results, sales counts, scarcity, guarantees, deadlines, or conditions.
 3. Write the article in Japanese using the adopted title exactly, three two-line headings, two body image placeholders, a natural CTA, and the product URL on the final line.
-4. Create one new article-specific ChatGPT chat. Send the Relife Art-style thumbnail request, body image A request, and body image B request as three separate messages. Do not use Codex ImageGen.
-5. Visually inspect the actual generated images, download them, and retry only failed images with the exact failure reason.
-6. Normalize each final image to the requested canvas, or default to `1280 x 670`, and keep each file at or below `700 KB`.
-7. Verify the signed-in Coconala account before entering content. Stop before saving if the account is not the requested account.
-8. Insert the thumbnail as the cover and replace the two body placeholders using Coconala's native image tool.
-9. Apply native bold and center alignment to all six heading lines.
-10. Save as draft only. Never click publish, publication confirmation, or any public-release action.
-11. Reopen or reload the exact draft edit URL and verify account, title, draft state, timestamp, cover image, two body images, removed placeholders, body content, and persisted heading formatting.
+4. Send the prepared article to Claude Code for a prose pass when a usable Claude Code session is available. Ask Claude Code to make the Japanese natural, warm, and approachable while preserving all visible facts, title, headings, placeholders, CTA, product URL, and Coconala safety rules. If Claude Code is unavailable or blocked, perform the prose pass in Codex and report the fallback.
+5. Create one new article-specific ChatGPT chat. Send the Relife Art-style thumbnail request, body image A request, and body image B request as three separate messages. Do not use Codex ImageGen.
+6. Visually inspect the actual generated images, download them, and retry only failed images with the exact failure reason.
+7. Normalize each final image to the requested canvas, or default to `1280 x 670`, and keep each file at or below `700 KB`.
+8. Verify the signed-in Coconala account before entering content. Stop before saving if the account is not the requested account.
+9. Insert the thumbnail as the cover and replace the two body placeholders using Coconala's native image tool.
+10. Apply native bold and center alignment to all six heading lines.
+11. Save as draft only. Never click publish, publication confirmation, or any public-release action.
+12. Reopen or reload the exact draft edit URL and verify account, title, draft state, timestamp, cover image, two body images, removed placeholders, body content, and persisted heading formatting.
 
 ## Image rules
 
@@ -55,6 +56,7 @@ Return:
 - article title;
 - product URL;
 - character count;
+- Claude Code prose pass status, or Codex fallback reason;
 - three image statuses with dimensions and file sizes;
 - ChatGPT image chat URL;
 - Coconala draft edit URL;

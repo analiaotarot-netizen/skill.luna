@@ -43,6 +43,36 @@ When the adopted title is stronger than the product page wording, keep the adopt
 - Avoid Markdown marks, HTML tags, and fake formatting inside the body.
 - Keep heading lines separate from the body so native Coconala bold and center alignment can be applied.
 
+## Claude Code prose pass
+
+When a usable Claude Code session is available, send the prepared article draft to Claude Code before image generation or Coconala upload.
+
+Ask Claude Code to:
+
+- make the Japanese body natural, friendly, warm, and easy to read;
+- keep the tone approachable rather than salesy or stiff;
+- preserve the adopted title exactly;
+- preserve all six heading lines and the two-line heading structure;
+- preserve `[逕ｻ蜒乗諺蜈･A]` and `[逕ｻ蜒乗諺蜈･B]` exactly;
+- preserve the final CTA and product URL;
+- use only product-page facts already extracted by Codex;
+- avoid adding reviews, ratings, sales counts, guarantees, credentials, scarcity, success claims, or expert conclusions;
+- return only the revised title and body, plus a short note if anything could not be improved safely.
+
+Use this prompt shape:
+
+```text
+Use the coconala-blog-full-draft prose pass.
+Please rewrite the following Coconala blog draft into natural, friendly Japanese.
+Preserve the exact title, all two-line headings, image placeholders, CTA, product URL, and all factual limits.
+Do not add new facts, results, reviews, qualifications, guarantees, scarcity, or sales claims.
+Return only the revised title and body.
+
+[draft here]
+```
+
+After receiving the Claude Code revision, compare it against the original facts and reject or repair any added claim before continuing. If Claude Code is unavailable, blocked, or cannot be verified, perform the same prose pass in Codex and state the fallback in the completion report.
+
 ## Image prompt sequence
 
 Use ChatGPT's editable image generator in the user's signed-in browser session. Create one new article-specific chat and keep its URL.

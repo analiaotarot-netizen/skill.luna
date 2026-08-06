@@ -1,6 +1,6 @@
 param(
   [string]$RepoName = "codex-skills-backup",
-  [string]$Visibility = "private",
+  [string]$Visibility = "public",
   [string]$GitHubUser = ""
 )
 
@@ -42,7 +42,7 @@ if ($status) {
 
 $gh = Get-Command gh -ErrorAction SilentlyContinue
 if ($gh) {
-  Write-Host "GitHub CLI found. Creating a private repository and pushing."
+  Write-Host "GitHub CLI found. Creating a GitHub repository and pushing."
   $visibilityFlag = if ($Visibility -eq "public") { "--public" } else { "--private" }
   & gh repo create $RepoName $visibilityFlag --source . --remote origin --push
   Write-Host "Done: pushed to GitHub."

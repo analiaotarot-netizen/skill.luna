@@ -1,10 +1,11 @@
 # Codex Skills Backup
 
 このリポジトリは、Codexで使う個人スキルのバックアップ用です。
+URLを開けば内容を確認できるよう、公開リポジトリ運用を前提にしています。
 
 ## 方針
 
-- スキル本体はGitHubの非公開リポジトリで管理する。
+- スキル本体はGitHubの公開リポジトリで管理する。
 - Notionは「目録」「使い方」「リンク集」として使う。
 - PCを変えるときは、このリポジトリの `skills/` 配下を新PCの `.codex/skills/` に戻す。
 
@@ -24,10 +25,10 @@
 .\publish-to-github.ps1
 ```
 
-GitHub CLI `gh` がある場合は、非公開リポジトリを作ってそのままpushします。
+GitHub CLI `gh` がある場合は、公開リポジトリを作ってそのままpushします。
 `gh` がない場合は、GitHubの新規リポジトリ作成ページを開き、作成後にEnterを押すとpushします。
 
-既定のリポジトリ名は `codex-skills-backup`、公開範囲は `private` です。
+既定のリポジトリ名は `codex-skills-backup`、公開範囲は `public` です。
 
 ## Notionで管理するもの
 

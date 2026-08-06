@@ -2,6 +2,12 @@
 
 このリポジトリの `skills/` フォルダを、Codexのスキル置き場に入れて使います。
 
+GitHub公開後は、次を開いてZIPで取得できます。
+
+```text
+https://github.com/YOUR_NAME/codex-skills-backup/archive/refs/heads/main.zip
+```
+
 ## 入れる場所
 
 ```text
@@ -22,6 +28,18 @@ Relife Artカルーセルスキルで、魂のレシピデザインのInstagram�
 
 ```text
 $coconala-blog-oneclick を使って、商品ページを確認し、ブログ記事・画像3枚を制作して、未公開の下書きとして保存してください。
+```
+
+### ココナラブログ一気通貫
+
+```text
+$coconala-blog-full-draft を使って、商品ページを確認し、ブログを書き、サムネと本文画像2枚をChatGPTで作成し、ココナラに未公開下書きとして保存して、再オープン検証までお願いします。
+```
+
+### ココナラ下書きアップロード
+
+```text
+$coconala-blog-upload-draft を使って、ココナラブログ記事と画像3枚を作成し、ココナラに未公開下書きとして保存して検証してください。
 ```
 
 ### ココナラ画像生成

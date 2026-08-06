@@ -16,6 +16,8 @@ URLを開けば内容を確認できるよう、公開リポジトリ運用を�
 | `relife-art-carousel-chatgpt` | Relife Art / 魂のレシピデザインでInstagramカルーセル画像をChatGPT内生成し、検品する |
 | `coconala-blog-oneclick` | ココナラ商品ページからブログ記事、画像3枚、未公開下書き保存、再オープン検証まで行う |
 | `coconala-blog-image-generator` | ワンクリック卓から画像プロンプトを抽出し、ChatGPT画像生成と検品を行う |
+| `coconala-blog-upload-draft` | 記事作成、ChatGPT画像3枚、画像正規化、ココナラ下書きアップロード、再オープン検証を行う |
+| `coconala-blog-full-draft` | ワンクリック系と下書きアップロード系を合体した一気通貫スキル |
 
 ## GitHubに保存する手順
 
@@ -39,3 +41,5 @@ Notionには `notion-index.csv` をインポートして、各スキルの用途
 ## 連れ用の簡素な指示書
 
 `EMBED-INSTRUCTIONS.md` に、スキルの置き場所とコピペ用の呼び出し文だけをまとめています。
+
+`GET-SKILLS.md` に、公開GitHubからZIP取得するためのリンク形をまとめています。

@@ -35,3 +35,7 @@ GitHub CLI `gh` がある場合は、公開リポジトリを作ってそのま�
 Notionには `notion-index.csv` をインポートして、各スキルの用途・呼び出し文・保管先URLを管理する。
 
 本体コードはNotionに貼り付けず、GitHub側を正とする。
+
+## 連れ用の簡素な指示書
+
+`EMBED-INSTRUCTIONS.md` に、スキルの置き場所とコピペ用の呼び出し文だけをまとめています。

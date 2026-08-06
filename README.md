@@ -18,18 +18,16 @@
 
 ## GitHubに保存する手順
 
-1. GitHubで private repository を作る。例: `codex-skills-backup`
-2. このフォルダをリポジトリとして初期化する。
-3. `skills/`、`README.md`、`RESTORE.md`、`notion-index.csv` をコミットする。
+一番かんたんな方法は、このフォルダで次を1回実行することです。
 
 ```powershell
-git init
-git add .
-git commit -m "Add Codex skills backup"
-git branch -M main
-git remote add origin https://github.com/YOUR_NAME/codex-skills-backup.git
-git push -u origin main
+.\publish-to-github.ps1
 ```
+
+GitHub CLI `gh` がある場合は、非公開リポジトリを作ってそのままpushします。
+`gh` がない場合は、GitHubの新規リポジトリ作成ページを開き、作成後にEnterを押すとpushします。
+
+既定のリポジトリ名は `codex-skills-backup`、公開範囲は `private` です。
 
 ## Notionで管理するもの
 

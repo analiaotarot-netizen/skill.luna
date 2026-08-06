@@ -11,7 +11,7 @@ function Find-Git {
   if (Test-Path -LiteralPath $bundled) { return $bundled }
   $cmd = Get-Command git -ErrorAction SilentlyContinue
   if ($cmd) { return $cmd.Source }
-  throw "git が見つかりません。Codex同梱Gitまたは通常のGitを確認してください。"
+  throw "git was not found. Please check Codex bundled Git or installed Git."
 }
 
 $repoDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -25,10 +25,12 @@ if (-not (Test-Path -LiteralPath ".git")) {
 
 & $git branch -M main
 
-if (-not (& $git config user.name)) {
+$configuredName = & $git config user.name 2>$null
+if (-not $configuredName) {
   & $git config user.name "Codex Backup"
 }
-if (-not (& $git config user.email)) {
+$configuredEmail = & $git config user.email 2>$null
+if (-not $configuredEmail) {
   & $git config user.email "codex-backup@example.local"
 }
 
@@ -40,27 +42,27 @@ if ($status) {
 
 $gh = Get-Command gh -ErrorAction SilentlyContinue
 if ($gh) {
-  Write-Host "GitHub CLI が見つかりました。非公開リポジトリを作成して push します。"
+  Write-Host "GitHub CLI found. Creating a private repository and pushing."
   $visibilityFlag = if ($Visibility -eq "public") { "--public" } else { "--private" }
   & gh repo create $RepoName $visibilityFlag --source . --remote origin --push
-  Write-Host "完了: GitHub に push しました。"
+  Write-Host "Done: pushed to GitHub."
   exit 0
 }
 
 if (-not $GitHubUser) {
-  $GitHubUser = Read-Host "GitHubユーザー名を入力してください"
+  $GitHubUser = Read-Host "Enter your GitHub username"
 }
 
 $remoteUrl = "https://github.com/$GitHubUser/$RepoName.git"
 $newRepoUrl = "https://github.com/new?name=$RepoName&visibility=$Visibility"
 
 Write-Host ""
-Write-Host "GitHub CLI がないため、ブラウザで非公開リポジトリ作成ページを開きます。"
+Write-Host "GitHub CLI was not found. Opening the GitHub new repository page."
 Write-Host "Repository name: $RepoName"
 Write-Host "Visibility: $Visibility"
 Write-Host ""
 Start-Process $newRepoUrl
-Read-Host "ブラウザでリポジトリを作成したら Enter を押してください"
+Read-Host "Create the repository in the browser, then press Enter here"
 
 $existingRemote = & $git remote
 if ($existingRemote -contains "origin") {
@@ -69,8 +71,8 @@ if ($existingRemote -contains "origin") {
   & $git remote add origin $remoteUrl
 }
 
-Write-Host "pushします。GitHubログイン画面が出たら認証してください。"
+Write-Host "Pushing now. If GitHub asks you to sign in, complete the authentication."
 & $git push -u origin main
 
 Write-Host ""
-Write-Host "完了: $remoteUrl"
+Write-Host "Done: $remoteUrl"

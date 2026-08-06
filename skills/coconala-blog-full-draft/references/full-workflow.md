@@ -49,7 +49,7 @@ Use ChatGPT's editable image generator in the user's signed-in browser session. 
 
 Send exactly one image request per message:
 
-1. Thumbnail / eyecatch.
+1. Thumbnail / eyecatch, normally in Relife Art style.
 2. Body image A.
 3. Body image B.
 
@@ -64,6 +64,8 @@ Common requirements:
 
 Thumbnail requirements:
 
+- Default to Relife Art generator/workflow styling for the thumbnail when the user does not specify another style. Include `https://relife-art-generator.hidemiya.chatgpt.site/` as style context when useful.
+- Use the Relife Art visual world as inspiration, but keep the final Coconala canvas, normally `1280 x 670`. Do not switch to `720 x 900` unless the user explicitly asks for Instagram carousel output.
 - Include the adopted article title exactly when text is requested.
 - Do not add subtitle text, numbers, URL, logo, watermark, or extra claims.
 - If the user requests no text, make it completely textless.

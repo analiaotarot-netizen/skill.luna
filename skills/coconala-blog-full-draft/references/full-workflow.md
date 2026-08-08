@@ -16,6 +16,8 @@ Collect these before execution when they are not already supplied:
 
 Reuse supplied decisions exactly.
 
+If the adopted article title, concept, or headings are not supplied, design them after product research using `article-planning-playbook.md`. Do not ask the user to fill routine gaps when the live product page gives enough safe material to proceed.
+
 ## Product research
 
 Open the live product page and extract only visible facts. Safe facts include service content, target reader, visible flow, visible cautions, price, seller wording, and product URL.
@@ -29,10 +31,28 @@ Do not invent or imply:
 
 When the adopted title is stronger than the product page wording, keep the adopted title but make the body fact-safe.
 
+## Article planning
+
+Before drafting, create an internal reader-facing plan:
+
+- target reader and likely hesitation;
+- reader's ideal state after reading;
+- product value supported by visible facts;
+- safe trust support from visible facts;
+- missing details that must not be invented;
+- title candidates if no title is fixed;
+- three two-line headings;
+- natural CTA direction.
+
+Use the plan to make the article feel like it is speaking to the reader, not merely reporting product features. Do not include the internal plan in the Coconala post unless the user asks for it.
+
+If details are missing, compensate with reader pain, visible process, and safe service fit. Mark uncertain items in working notes, but remove unresolved bracket notes from the final Coconala body before upload.
+
 ## Article contract
 
 - Japanese body length target: `1000` to `1400` characters unless the user asks otherwise.
 - Preserve the adopted title exactly.
+- If no adopted title was supplied, choose the strongest safe title from the planning step and use it consistently for the article, thumbnail prompt, upload title, and completion report.
 - Preserve a fixed first line exactly when provided.
 - Use three headings, each as two standalone lines.
 - During preparation, place two standalone placeholders:

@@ -17,7 +17,7 @@ URLを開けば内容を確認できるよう、公開リポジトリ運用を�
 | `coconala-blog-oneclick` | ココナラ商品ページからブログ記事、画像3枚、未公開下書き保存、再オープン検証まで行う |
 | `coconala-blog-image-generator` | ワンクリック卓から画像プロンプトを抽出し、ChatGPT画像生成と検品を行う |
 | `coconala-blog-upload-draft` | 記事作成、ChatGPT画像3枚、画像正規化、ココナラ下書きアップロード、再オープン検証を行う |
-| `coconala-blog-full-draft` | ワンクリック系と下書きアップロード系を合体した一気通貫スキル |
+| `coconala-blog-full-draft` | コンセプト・タイトル・見出し設計から、記事、画像、ココナラ下書き保存、検証まで行う一気通貫スキル |
 
 ## GitHubに保存する手順
 

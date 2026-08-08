@@ -5,7 +5,7 @@
 GitHub公開後は、次を開いてZIPで取得できます。
 
 ```text
-https://github.com/YOUR_NAME/codex-skills-backup/archive/refs/heads/main.zip
+https://github.com/peroperocandy0607-collab/codex-skills-backup/archive/refs/heads/main.zip
 ```
 
 ## 入れる場所

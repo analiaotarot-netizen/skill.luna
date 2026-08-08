@@ -5,16 +5,16 @@
 ## 全部まとめて取得
 
 ```text
-https://github.com/YOUR_NAME/codex-skills-backup/archive/refs/heads/main.zip
+https://github.com/peroperocandy0607-collab/codex-skills-backup/archive/refs/heads/main.zip
 ```
 
 ## リポジトリを見る
 
 ```text
-https://github.com/YOUR_NAME/codex-skills-backup
+https://github.com/peroperocandy0607-collab/codex-skills-backup
 ```
 
-`YOUR_NAME` はGitHubユーザー名に置き換えてください。
+このURLはGitHub公開済みなので、そのまま共有できます。
 
 ## 入れる場所
 

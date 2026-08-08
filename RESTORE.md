@@ -5,7 +5,7 @@ PCを変えたあとにCodexスキルを戻す手順です。
 ## 1. リポジトリを取得
 
 ```powershell
-git clone https://github.com/YOUR_NAME/codex-skills-backup.git
+git clone https://github.com/peroperocandy0607-collab/codex-skills-backup.git
 cd codex-skills-backup
 ```
 

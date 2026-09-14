@@ -13,6 +13,7 @@ URLを開けば内容を確認できるよう、公開リポジトリ運用を�
 
 | Skill | Purpose |
 |---|---|
+| `paid-note-strategy` | テーマ決めから、ターゲット深掘り→3案→タイトル10案→構成→本文執筆→画像生成→note.com下書き投入まで一気通貫で行う |
 | `relife-art-carousel-chatgpt` | Relife Art / 魂のレシピデザインでInstagramカルーセル画像をChatGPT内生成し、検品する |
 | `coconala-blog-oneclick` | ココナラ商品ページからブログ記事、画像3枚、未公開下書き保存、再オープン検証まで行う |
 | `coconala-blog-image-generator` | ワンクリック卓から画像プロンプトを抽出し、ChatGPT画像生成と検品を行う |
@@ -30,7 +31,7 @@ URLを開けば内容を確認できるよう、公開リポジトリ運用を�
 GitHub CLI `gh` がある場合は、公開リポジトリを作ってそのままpushします。
 `gh` がない場合は、GitHubの新規リポジトリ作成ページを開き、作成後にEnterを押すとpushします。
 
-既定のリポジトリ名は `codex-skills-backup`、公開範囲は `public` です。
+既定のリポジトリ名は `codex-skills-backup`、公開範囲は `public` です（このリポジトリ自体は `skill.luna` という名前で作成済み）。
 
 ## Notionで管理するもの
 

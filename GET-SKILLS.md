@@ -5,13 +5,13 @@
 ## 全部まとめて取得
 
 ```text
-https://github.com/peroperocandy0607-collab/codex-skills-backup/archive/refs/heads/main.zip
+https://github.com/analiaotarot-netizen/skill.luna/archive/refs/heads/main.zip
 ```
 
 ## リポジトリを見る
 
 ```text
-https://github.com/peroperocandy0607-collab/codex-skills-backup
+https://github.com/analiaotarot-netizen/skill.luna
 ```
 
 このURLはGitHub公開済みなので、そのまま共有できます。
@@ -28,6 +28,7 @@ C:\Users\あなたのユーザー名\.codex\skills\
 
 ## 入っているスキル
 
+- `paid-note-strategy`
 - `coconala-blog-full-draft`
 - `coconala-blog-upload-draft`
 - `coconala-blog-oneclick`

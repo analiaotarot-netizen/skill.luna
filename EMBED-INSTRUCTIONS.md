@@ -5,7 +5,7 @@
 GitHub公開後は、次を開いてZIPで取得できます。
 
 ```text
-https://github.com/peroperocandy0607-collab/codex-skills-backup/archive/refs/heads/main.zip
+https://github.com/analiaotarot-netizen/skill.luna/archive/refs/heads/main.zip
 ```
 
 ## 入れる場所
@@ -17,6 +17,24 @@ C:\Users\あなたのユーザー名\.codex\skills\
 ## 使い方
 
 Codexに以下のように頼めばOKです。
+
+### 有料note設計・執筆・下書き投入（企画だけ）
+
+```text
+$paid-note-strategy を使って、テーマ「〇〇」で有料noteを企画してください。ターゲット像の深掘り→3案→タイトル10案の順で見せてください。本文はまだ書かないでください。
+```
+
+### 有料note設計・執筆・下書き投入（テーマ決めから一気通貫）
+
+```text
+$paid-note-strategy を使って、テーマ「〇〇」の有料noteを企画から作ってください。ターゲット深掘り→3案→タイトル10案を見せて、私が選んだら本文を書き、画像も生成して、noteに未公開の下書きとして保存してください。文字数は20,000字以上でお願いします。
+```
+
+### 有料note設計・執筆・下書き投入（本文と画像はあるので下書き投入だけ）
+
+```text
+$paid-note-strategy を使って、この記事をnoteの下書きに入れてください。アカウントは「〇〇」です。本文は<記事.mdのパス>、画像は<画像フォルダのパス>にあります。公開はせず、下書き保存と保存後の全文確認までお願いします。
+```
 
 ### Relife Artカルーセル
 

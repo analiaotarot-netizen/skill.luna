@@ -1,0 +1,6 @@
+interface:
+  display_name: "有料note設計・執筆"
+  short_description: "読者起点で有料noteを設計・執筆"
+  default_prompt: "Use $paid-note-strategy to design a paid note, propose 10 titles, and draft it after I choose one."
+policy:
+  allow_implicit_invocation: true
